@@ -138,7 +138,7 @@
   }
   .artist-form p {
     margin: 5px 0 15px 0;
-    color: #white;
+    color: #ddd;
   }
  
 
@@ -535,5 +535,3 @@ button#search {
         border: none;
         cursor: pointer;
       }
-      
-  
