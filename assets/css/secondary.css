@@ -1,0 +1,61 @@
+:root {
+    --color-primary: teal;
+    --color-secondary:#024e76;
+}
+
+.teal {
+    color: var(--color-primary);
+}
+
+.fuchsia {
+    color: var(--color-secondary);
+    border-bottom: 3px solid darkcyan;
+    width: 500px;
+}
+
+body {
+    background-color: black;
+    justify-items: center;
+}
+
+Header {
+    background-color: black;
+}
+a {
+    color: var(--color-primary);
+}
+
+.teal {
+    color: var(--color-primary);
+}
+
+.fuchsia {
+    color: var(--color-secondary);
+}
+
+img {
+    margin: 10px 10px 10px 10px;
+    border: 5px solid #024e76;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 20px darkcyan;
+}
+
+.name {
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.fa {
+    font-size: 22px;
+}
+
+.footer  {
+    background-color: #024e76;;
+    color: teal;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+   
+}
