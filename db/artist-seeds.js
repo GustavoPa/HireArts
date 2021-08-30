@@ -2,55 +2,35 @@ const sequelize = require('../config/connection');
 
 const artistdata = [
   {
-    username: 'alesm',
-    email: 'nwestnedge0@cbc.ca',
-    password: 'password123'
+    profile_pic: 'https://i.imgur.com/QQQQQQQ.jpg',
+    username: 'LakynMPhotography',
+    password: 'password123',
+    email: 'lakynmphotographY@Hotmail.com',
+    password: 'password123',
+    artist_type: 'Photographer',
+    location_ID: 'Ottawa, ONT',
+    website: 'www.lakynmphotography.com',
+    work_samples: 'https://i.imgur.com/QQQQQQQ.jpg',
+    description: 'Lakyn is a photographer based in Ottawa, Ontario. She is a graduate of the University of Ottawa with a degree in Photography. She has been working in the field of photography for over 10 years',
+    opento_commision: 'Yes',
   },
   {
-    username: 'jwilloughway1',
-    email: 'rmebes1@sogou.com',
-    password: 'password123'
+    username: 'DEMS & DOLLS',
+    email: 'Dems@hotmail.com',
+    password: 'Doll123'
+
   },
   {
-    username: 'iboddam2',
-    email: 'cstoneman2@last.fm',
-    password: 'password123'
+    username: 'Banksy',
+    email: 'Banksy@hotmail.com',
+    password: 'Banksy123'
   },
   {
-    username: 'dstanmer3',
-    email: 'ihellier3@goo.ne.jp',
-    password: 'password123'
+    username: 'Waleed',
+    email: 'waleed@hotmail.com',
+    password: 'waleed123'
   },
-  {
-    username: 'djiri4',
-    email: 'gmidgley4@weather.com',
-    password: 'password123'
-  },
-  {
-    username: 'msprague5',
-    email: 'larnout5@imdb.com',
-    password: 'password123'
-  },
-  {
-    username: 'mpergens6',
-    email: 'hnapleton6@feedburner.com',
-    password: 'password123'
-  },
-  {
-    username: 'tpenniell7',
-    email: 'kperigo7@china.com.cn',
-    password: 'password123'
-  },
-  {
-    username: 'msabbins8',
-    email: 'lmongain8@google.ru',
-    password: 'password123'
-  },
-  {
-    username: 'jmacarthur9',
-    email: 'bsteen9@epa.gov',
-    password: 'password123'
-  }
+ 
 ];
 
 

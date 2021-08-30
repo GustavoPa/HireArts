@@ -6,10 +6,9 @@
 .teal {
     color: var(--color-primary);
 }
-
 .fuchsia {
     color: var(--color-secondary);
-    border-bottom: 3px solid darkcyan;
+    border-bottom: 5px solid darkcyan;
     width: 500px;
 }
 
