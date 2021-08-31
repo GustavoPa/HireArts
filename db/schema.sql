@@ -23,8 +23,6 @@ USE artist_db;
    work_samples TEXT,
 )
 
-
-
  CREATE TABLE ArtistType(
  Painter VARCHAR(30),
  Sculptor VARCHAR(30),
@@ -35,5 +33,6 @@ USE artist_db;
  Animator VARCHAR(30),
  );
 
- CREATE TABLE Location(-   location_id VARCHAR(30),
+ CREATE TABLE Location(
+    location_id VARCHAR(30),
 );

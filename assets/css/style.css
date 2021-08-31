@@ -36,7 +36,7 @@
   
   header a {
     text-decoration: none;
-    color: #073955;
+    color: #ffffff;
   }
   header a:hover {
     color:darkcyan;
@@ -352,18 +352,18 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    box-shadow: 0 0 50px rgb(0, 2, 2);
+    box-shadow: 0 0 50px darkcyan;
   }
   
   .artist-bio {
     padding: 25px;
     line-height: 1.3;
-    color: darkcyan;
+    color: rgb(253, 253, 253);
   }
   
   .artist-bio h3 {
     font-size: 28px;
-    color: darkgoldenrod;
+    color: rgb(255, 255, 255);
   }
   
   .artist-bio h4 {
