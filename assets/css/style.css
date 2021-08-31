@@ -1,0 +1,563 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+   
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  /* HEADER / NAV BAR STYLES START */
+  header {
+    padding: 20px 35px;
+    background-color:rgba(98, 35, 116, 0.671);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #073955;
+  }
+  header a:hover {
+    color:darkcyan;
+  }
+
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* FOOTER STYLES START */
+  footer {
+    background: #000000;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: #073955;
+  }
+ 
+  section {
+    padding: 60px;
+  }
+  
+  /* HERO STYLES START */
+  .hero {
+    background-color:#024d76b6;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+  background-position: 80%;
+  }
+  
+  .hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #073955;
+  }
+  
+  .artist-form {
+    display: block;
+      justify-content: center;
+    border: 3px solid #073955;
+    background-color: rgba(99, 35, 116, 0.8);
+    padding: 20px;
+    color: #000000;
+    width: 50%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+  }
+  
+  .artist-form h3 {
+    font-size: 24px;
+    color: #073955;
+    margin: 0;
+  }
+  .artist-form p {
+    margin: 5px 0 15px 0;
+    color: #ddd;
+  }
+ 
+
+  form#searchArtsit {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  input#searchArtist {
+   
+    text-align: center;
+    border: 2px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 50%;
+    margin-bottom: 15px; 
+    border-radius: 20px;
+      background-color: rgba(255,255,255, 0.75);
+  }
+  
+  select#artist-type {
+    border: 2px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 50%;
+    margin-bottom: 15px; 
+    border-radius: 20px;
+      background-color: rgba(255,255,255, 0.75);
+  }
+
+  .form-input {
+    border: 2px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px; 
+    border-radius: 20px;
+      background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+  
+  .artist-form label {
+    margin: 0 5px;
+  }
+ 
+
+button#search {
+  outline: none;
+  color: #000000;
+    font-weight: bold;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+  .artist-form button {
+    color: #000000;
+    font-weight: bold;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+
+  } 
+  .artist-form button:hover {
+    background-color: darkcyan;
+  }
+  
+  .checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+  }
+  .checkbox-wrapper label, .radio-wrapper label {
+    position: relative;
+    left: 10px;
+    margin: 10px;
+    line-height: 1.6;
+  }
+  .checkbox-wrapper label::before, .radio-wrapper label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.75);  
+    border: 1px solid darkcyan;
+    position: absolute;
+    top: -4px;
+    left: -30px;
+    border-radius: 50%;
+  }
+  .radio-wrapper label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #024e76;
+    position: absolute;
+    left: -29px;
+    top: -3px;
+  }
+  
+  .checkbox-wrapper label::after {
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid #024e76;
+    border-bottom: 2px solid #024e76;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    transform: rotate(-58deg);
+    background-image: radial-gradient(circle, #39a6b2, #024e76);
+  }
+  .checkbox-wrapper input + label::after, 
+  .radio-wrapper input + label::after {
+    content: none;
+  }
+  
+  .checkbox-wrapper input:checked + label::after, 
+  .radio-wrapper input:checked + label::after {
+    content: "";
+  }
+ 
+  
+  /* SECTION TITLE STYLES START */
+  .section-title {
+    font-size: 48px;
+    border-bottom: 5px solid;
+    color: #024e76;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+  .section-title2 {
+    font-size: 48px;
+    border-bottom: 5px solid;
+    color: #ffffff;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+  .primary-border  {
+    border-color: rgba(99, 35, 116, 0.8);
+  }
+  
+  .secondary-border {
+    border-color:  rgba(99, 35, 116, 0.8);
+  }
+  
+  /* WHAT WE DO  */
+  
+  .intro p {
+    line-height: 1.7;
+    color: #024e76;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  /* Artist Section  */
+  .artists {
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #024d76b6;
+  }
+  /* Artist Section Blocks  */
+  .artist {
+    margin: 20px;
+    flex: 1;
+    background: #024d76b6;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+  section#your-artists {
+    padding-top: 120px;
+    background: #024d76; 
+  }
+  
+img{
+  margin-top:-60px;
+  box-shadow: 0 0 80px darkcyan;
+}
+  .artist img {
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 0 0 50px rgb(0, 2, 2);
+  }
+  
+  .artist-bio {
+    padding: 25px;
+    line-height: 1.3;
+    color: darkcyan;
+  }
+  
+  .artist-bio h3 {
+    font-size: 28px;
+    color: darkgoldenrod;
+  }
+  
+  .artist-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .artist-bio p {
+    font-size: 17px;
+  }
+ 
+  
+  /* REACH OUT STYLES START */
+  .signup {
+    background: #024d76b6;
+  }
+  
+  .signup h2 {
+    color: #024e76;
+  }
+  
+  .signup-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .signup-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+  
+  .signup-info iframe {
+    height: 400px;
+  }
+  
+  .signup-info div {
+    color: white;
+  }
+  
+  .signup-info h3 {
+    color: #fce138;
+    font-size: 32px;
+  }
+  
+  .signup-info p, .signup-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .signup-form input, .signup-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.75);
+    outline: none;
+  }
+  
+  /* UTILITIES */
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+    header nav ul li a:hover {
+      background: #fce138;
+      color: #024e76;
+      border-radius: 15px;
+      text-shadow: none;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    .hero-cta, .artist-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+    .section-title {
+      width: 80%;
+
+    }
+    
+    .artist {
+      flex: 0 70%;
+    }
+    
+    .signup-info iframe{
+      flex: 1 100%;
+    }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+  
+      section {
+        padding: 30px 15px;
+      }
+    
+      .step h3 {
+        flex: 1 100%;
+        text-align: center;
+      }
+    
+      .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    
+      .step-text {
+        flex: 100%;  
+      }
+    
+    }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .artist-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .artist {
+      flex: 0 100%;
+    }
+  
+     .search-container button {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer; 
+     }
+    }
+  }
+}
+  
