@@ -1,0 +1,31 @@
+{
+  "name": "HireArts",
+  "version": "1.0.0",
+  "description": "Platform for artists to showcase their work and meet one another",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoPa/HireArts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoPa/HireArts/issues"
+  },
+  "homepage": "https://github.com/GustavoPa/HireArts#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "express-session-sequelize": "^2.3.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
