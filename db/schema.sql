@@ -35,5 +35,8 @@ CREATE DATABASE hireart_db;
 --  Animator VARCHAR(30),
 --  );
 
---  CREATE TABLE Location(-   location_id VARCHAR(30),
+
+--  CREATE TABLE Location(
+--   location_id VARCHAR(30),
 -- );
+
