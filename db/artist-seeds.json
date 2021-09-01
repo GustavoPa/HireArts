@@ -1,0 +1,32 @@
+{
+  "artists": [
+    {
+      "id": "0",
+      "name": "Lakyn",
+      "username": "LakynMPhotography",
+      "email": "lakynmphotography@hotmail.com",
+      "password": "lakyn123"
+    },
+    {
+      "id": "1",
+      "name": "DEMS & DOLLS",
+      "username": "DEMS & DOLLS",
+      "email": "dems@hotmail.com",
+      "password": "dems123"
+    },
+    {
+      "id": "2",
+      "name": "Banksy",
+      "username": "Banksy",
+      "email": "banksy@gmail.com",
+      "password": "banksy123"
+    },
+    {
+      "id": "3",
+      "name": "Waleed",
+      "username": "Waleed",
+      "email": "Waleed@gmail.com",
+      "password": ""
+    }
+  ]
+}
