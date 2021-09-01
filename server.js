@@ -10,9 +10,7 @@ const app = express();
 
 
 app.get('/api/artists', (req, res) => {
-    let results = artists;
-    console.log(req.query)
-    res.json(results);
+    res.json(artists);
 })
 
 
