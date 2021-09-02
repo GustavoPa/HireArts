@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "hireart",
+=======
+  "name": "hirearts",
+>>>>>>> 7c5006546f48f986535cb76765ac6f186e1fb7c1
   "version": "1.0.0",
   "description": "Platform for artists to showcase their work and meet one another",
   "main": "server.js",
