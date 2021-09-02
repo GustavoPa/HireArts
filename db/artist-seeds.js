@@ -51,6 +51,6 @@ const artistData = [
   },
 ];
 
+const artistSeeds = () => artistData.bulkCreate(artistData);
 
-
-module.exports = artistData; 
+module.exports = artistSeeds; 
