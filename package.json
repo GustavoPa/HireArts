@@ -1,5 +1,5 @@
 {
-  "name": "HireArts",
+  "name": "hireart",
   "version": "1.0.0",
   "description": "Platform for artists to showcase their work and meet one another",
   "main": "server.js",
