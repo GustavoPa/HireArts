@@ -3,6 +3,9 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
+const fs = require('fs');
+const path = require('path');
+
 
 // instantiate the server
 const app = express();
@@ -42,12 +45,51 @@ function filterByQuery(query, artistsArray) {
     return filteredResults;
 };
 
-function findById(id, artistsArray) {
-    const result = artistsArray.filter(artists => artists.id === id)[0];
+function findById (id, artistsArray) {
+    const result = artistsArray.filter(artist => artist.id === id)[0];
     return result;
-  }
+}
+
+function createNewArtist(body, artistsArray) {
+    const artist = body;
+    //add new artist to artists json & artistsArray 
+    // this creates a copy and will not visibly appear in artistseeds.json file!)
+    artistsArray.push(artist);
+    fs.writeFileSync(
+        path.join(__dirname, './db/artist-seeds.json'),
+    JSON.stringify({ artists: artistsArray }, null, 2)
+    );
+    return artist;
+}
+
+// validate artist for "required" info
+function validateArtist(artist) {
+    if (!artist.name || typeof artist.name !== 'string') {
+        return false;
+    }
+    if (!artist.username || typeof artist.username !== 'string') {
+        return false;
+    }
+    if (!artist.password || typeof artist.password !== 'string') {
+        return false;
+    }
+    if (!artist.email || typeof artist.email !== 'string') {
+        return false;
+    }
+    if (!artist.artisttype || typeof artist.artisttype !== 'string') {
+    return false;
+    }
+    // HOW TO VALIDATE FOR MINIMUM ONE SAMPLE PIC ADDED??? 
+    
+    return true;
+}
 
 
+
+
+///// ROUTES /////
+
+// find all artists
 app.get('/api/artists', (req, res) => {
     let results = artists;
     if (req.query) {
@@ -56,7 +98,8 @@ app.get('/api/artists', (req, res) => {
     res.json(results);
 });
 
-app.get('api/artists/:id', (req, res) => {
+//find artist by ID
+app.get('/api/artists/:id', (req, res) => {
     const result = findById(req.params.id, artists);
     if (result) {
         res.json(result);
@@ -65,11 +108,19 @@ app.get('api/artists/:id', (req, res) => {
     }
 });
 
-// app.post('/api/artists', (req, res) => {
-//     // req.body is where our incoming content will be
-//     console.log(req.body);
-//     res.json(req.body);
-//   });
+
+// create new artist
+app.post('/api/artists', (req, res) => {
+    // set new indexed ID for new artist
+    req.body.id = artists.length.toString();
+
+    if (!validateArtist(req.body)) {
+        res.status(400).send("Please eneter all the required information.");
+    } else {
+        const animal = createNewArtist(req.body, artists);
+        res.json(artist)
+    }
+});
 
 
 
