@@ -88,7 +88,7 @@
       <form id="searchArtsit" class="artistbtn">
         <input
           id="searchArtist"
-          class="pr-5 px-1"
+          class="px-1 pr-5"
           type="text"
           placeholder="SearchByArtist"
           name="Artist"
@@ -98,11 +98,11 @@
         </button>
       </form>
       <!-- <form id="searchViewer" class="viewerBtn">
-      <input id="searchArtist" class="pr-5 px-1" type="text" placeholder="Viewer" name="Viewer">
+      <input id="searchArtist" class="px-1 pr-5" type="text" placeholder="Viewer" name="Viewer">
       <button id="search" type="submit" class=" btnSearch"> 
   </form>
   <form id="searchBtn" class="searchBtn">
-    <input id="searchArtist" class="pr-5 px-1" type="text" placeholder="Search" name="Search">
+    <input id="searchArtist" class="px-1 pr-5" type="text" placeholder="Search" name="Search">
     <button id="search" type="submit" class=" btnSearch"> <i class="fa fa-search"></i></button>
 </form> -->
     </section>
@@ -115,59 +115,30 @@
       </div>
 
       <div class="artists">
+        {{#each artists as |artist|}}
         <article class="artist">
           <img
-            src="assets/images/334542_10152129912880181_175584631_o.jpg"
-            alt="Arron Stephens in his workout clothes, ready to pump iron"
-          />
-          <div class="artist-bio">
-            <h3 class="artist-name">Arron Stephens</h3>
-            <h4 class="artist-role">Speed / Strength</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-              neque animi quo cupiditate commodi saepe culpa sed itaque velit
-              maiores optio dolorem excepturi aperiam dolores, voluptatibus
-              suscipit amet quis repellat!
-            </p>
-          </div>
-        </article>
-
-        <article class="artist">
-          <img
-            src="assets/images/Anthony.jpg"
-            alt="Joanna Gill cooling off after a work out"
-          />
-          <div class="artist-bio">
-            <h3 class="artist-name">Joanna Gill</h3>
-            <h4 class="artist-role">Endurance</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-              neque animi quo cupiditate commodi saepe culpa sed itaque velit
-              maiores optio dolorem excepturi aperiam dolores, voluptatibus
-              suscipit amet quis repellat!
-            </p>
-          </div>
-        </article>
-
-        <article class="artist">
-          <img
-            src="assets/images/waleed.jpg"
+            src="{{artist.profile_pic}}"
             alt="Harry Smith wearing a headband and lifting comically small pink weights"
           />
           <div class="artist-bio">
-            <h3 class="artist-name">Harry "The Headband" Smith</h3>
-            <h4 class="artist-role">Strength</h4>
+            <h3 class="artist-name">{{artist.username}}</h3>
+            <h4 class="artist-role">{{artist.artist_type}}</h4>
+            <a href="mailto:{{artist.email}}">Email:&nbsp; {{artist.email}}</h4>
+            <a href="{{artist.website}}">Website:&nbsp; {{artist.website}} </a>
+            <h4 class="artist-role">Open to commision: &nbsp;{{artist.opento_commision}}</h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-              neque animi quo cupiditate commodi saepe culpa sed itaque velit
-              maiores optio dolorem excepturi aperiam dolores, voluptatibus
-              suscipit amet quis repellat!
+              {{artist.description}}
             </p>
+            {{#each artist.work_samples as |work_sample|}}
+            <img src="{{work_sample}}"/>
+              {{/each}}
           </div>
         </article>
       </div>
     </section>
-
+  </each>
+  
     <!-- "Sign up section -->
     <section id="signup" class="signup">
       <div class="flex-row">
@@ -179,9 +150,7 @@
         <p>Join our collective of Artist</p>
 
         <form>
-          
           <label for="name" i class="fa fa-user icon"></i> &nbsp;&nbsp;&nbsp;Enter User Name:</label>
-    
           <input
             type="text"
             placeholder="User Name"
