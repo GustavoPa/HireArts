@@ -7,6 +7,7 @@
       "email": "lakynmphotography@hotmail.com",
       "password": "lakyn123",
       "artisttype": "Photographer",
+      "description": "description",
       "commissions": "Yes"
     },
     {
@@ -16,6 +17,7 @@
       "email": "dems@hotmail.com",
       "password": "dems123",
       "artisttype": "Painter",
+      "description": "description",
       "commissions": "Yes"
     },
     {
@@ -25,6 +27,7 @@
       "email": "banksy@gmail.com",
       "password": "banksy123",
       "artisttype": "Street artist",
+      "description": "description",
       "commissions": "No"
     },
     {
@@ -34,6 +37,7 @@
       "email": "Waleed@gmail.com",
       "password": "waleed123",
       "artisttype": "Painter",
+      "description": "description",
       "commissions": "Yes"
     },
     {
@@ -43,6 +47,7 @@
       "password": "vincent",
       "artisttype": "Painter",
       "commissions": "No",
+      "description": "description",
       "id": "4"
     }
   ]

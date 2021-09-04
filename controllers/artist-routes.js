@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 // find artist by ID (GET api/artists/1)
 router.get('/:id', (req, res) => {
     Artist.findOne({
+        attributes: { exclude: [ 'password' ]},
         where: {
             id: req.params.id
         }
