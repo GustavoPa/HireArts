@@ -1,0 +1,12 @@
+{{#each artists as |artist|}}
+<form class="logout-form">
+  <div>
+    <label for="email-logout">Email:{{artist.email}}</label>
+    <input type="text" id="email-logout" />
+  </div>
+
+  <div>
+    <button type="submit">Logout</button>
+  </div>
+</form>
+</each>

@@ -1,10 +1,9 @@
 const sequelize = require('../config/connection');
 
-const artistdata = [
+const artistData = [
   {
     profile_pic: 'https://i.imgur.com/QQQQQQQ.jpg',
     username: 'LakynMPhotography',
-    password: 'password123',
     email: 'lakynmphotographY@Hotmail.com',
     password: 'password123',
     artist_type: 'Photographer',
@@ -15,24 +14,43 @@ const artistdata = [
     opento_commision: 'Yes',
   },
   {
+    profile_pic: 'https://i.imgur.com/QQQQQQQ.jpg',
     username: 'DEMS & DOLLS',
     email: 'Dems@hotmail.com',
-    password: 'Doll123'
-
+    password: 'Doll123',
+    artist_type: 'Muraluist',
+    location_ID: 'Ottawa, ONT',
+    website: 'www.Dems&Dolls.com',
+    work_samples: 'https://i.imgur.com/QQQQQQQ.jpg',
+    description: 'Dems & Dolls is a muralist based in Ottawa, Ontario. She is a graduate of the University of Ottawa with a degree in Art. She has been working in the field of art for over 10 years',
+    opento_commision: 'Yes',
   },
   {
+    profile_pic: 'https://i.imgur.com/QQQQQQQ.jpg',
     username: 'Banksy',
     email: 'Banksy@hotmail.com',
-    password: 'Banksy123'
+    password: 'Banksy123',
+    artist_type: 'Graffiti',
+    location_ID: 'UK',
+    website: 'www.Banksy.com',
+    work_samples: ['https://i.imgur.com/QQQQQQQ.jpg','https://i.imgur.com/QQQQQQQ.jpg','https://i.imgur.com/QQQQQQQ.jpg'],
+    description:'Banky is a graffiti artist based in Ottawa, Ontario. She is a graduate of the University of Ottawa with a degree in Art. She has been working in the field of art for over 10 years',  
+    opento_commision: 'NO',
   },
   {
-    username: 'Waleed',
-    email: 'waleed@hotmail.com',
-    password: 'waleed123'
+    profile_pic: 'https://i.imgur.com/QQQQQQQ.jpg',
+    username: 'Vincent van Gogh ',
+    email: 'VincentvanGogh@hotmail.com',
+    password: 'VanGogh123',
+    artist_type: 'Painter',
+    location_ID: 'Zundert, Netherlands',
+    website: 'www.VincentvanGogh.com',
+    work_samples: 'https://i.imgur.com/QQQQQQQ.jpg',
+    description: 'Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists. The striking colour, emphatic brushwork, and contoured forms of his work powerfully influenced the current of Expressionism in modern art. Van Gogh’s art became astoundingly popular after his death, especially in the late 20th century, when his work sold for record-breaking sums at auctions around the world and was featured in blockbuster touring exhibitions. In part because of his extensive published letters, van Gogh has also been mythologized in the popular imagination as the quintessential tortured artist.', 
+    opento_commision: 'NO',
   },
- 
 ];
 
+const artistSeeds = () => artistData.bulkCreate(artistData);
 
-
-module.exports = artistdata; 
+module.exports = artistSeeds; 

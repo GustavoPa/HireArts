@@ -1,57 +1,71 @@
-<div id="artistData"">
-        <script type="text/javascript">
-       var artistData = document.getElementById(artistcard-template").innerHTML;
-       var template = Handlebars.compile(artistData);
-       Handlebars.registerHelper("makeLink",function(text,url){
-         text = handlebars.utils.escapeExpression(text);
-         url = handlebars.utils.escapeExpression(url);
 
-         var theLink = '<a href="'+url+'">'+text+'</a>';
-         return new handlebars.SafeString(theLink);
-       });
-          document.getElementById("artistData").innerHTML += artistData;
 
-       var artistData = template ({
-         username: "",
-         email: "",
-         location: "",
-         website: "",
-         description: "",
-         profile_pic: "",
-         works: [""],
-         artist_type: "",
-         opento_commision: "",
+{{!-- artistcard--}}
 
-       })
-
+{{!-- <script id="artistcard-template" type="text/x-handlebars-template"> --}}
+    {{!-- <section id="your-artists">
+      <div class="flex-row">
+        <h2 class="section-title2 primary-border ">Meet The Artists</h2>
       </div>
 
-{{!-- artistcard}}
+      <div class="artists">
+        {{#each artists as |artist|}}
+        <article class="artist">
+          <img
+            src="{{artist.profile_pic}}"
+          />
+          <div class="artist-bio">
+            <h3 class="artist-name">{{artist.username}}</h3>
+            <h4 class="artist-role">{{artist.artist_type}}</h4>
+            <a href="mailto:{{artist.email}}">Email:&nbsp; {{artist.email}}</h4>
+            <a href="{{artist.website}}">Website:&nbsp; {{artist.website}} </a>
+            <h4 class="artist-role">Open to Commision: &nbsp;{{artist.opento_commision}}</h4>
+            <p>
+              {{artist.description}}
+            </p>
+            {{#each artist.work_samples as |work_sample|}}
+            <img src="{{work_sample}}"/>
+              {{/each}}
+          </div>
+        </article>
+      </div>
+    </section>
+  </each> --}}
 
-<script id="artistcard-template" type="text/x-handlebars-template">
-<div class="artist">
-
-<img>{{profile_pic}}</img><br/>
+ {{#each artists as |artist|}}
+  <section id="your-artists">
+      <div class="flex-row">
+        <h2 class="section-title2 primary-border ">Meet The Artists</h2>
+      </div>
+<div class="artist" class="flex-row">
+<img src="{{artist.profile_pic}}"/> </br>
 
 <div class="artist-bio">
-<h3>{{username}}</h3>
-<h4>{{email}}<h4>
-<p>{{location}}<p>
-<p>{{website}}<p>
-<p>{{description}}<p>
-<h4>{{artist_type}}<h4>
-<p>{{opento_commision}}<p>
-<img>{{works}}</img>
+<h3>{{artist.username}}</h3>
+ <h4>{{artist.location_ID}}<h4></h4>
+<h4>{{artist.artist_type}}<h4>
+ 
+<a href="mailto:{{artist.email}}">Email:&nbsp;{{artist.email}}</a>
+</br>
+
+<a href="{{artist.website}}">Website: &nbsp;{{artist.website}}</a></br>
+</br>
+<p>{{artist.description}}<p>
+</br>
+<p>Open to Commision :&nbsp;  {{artist.opento_commision}}<p>
+
+  </br></br>
+  <div class="sample_works">
+  {{#each artist.work_samples as |work_sample|}}
+<img class="samples"src="{{work_sample}}"/>
+{{/each}}
+</div>
+</div>
 </div>
 </div>
 
+{{/each}} 
 
-Username: {{username}}
-Email: {{email}}
-Location: {{location}}
-Website: {{website}}
-Description: {{description}}
-Profile_pic: {{profile_pic}}
-Works: {{works}}
-Artist type: {{artist_type}}
-Open tocommision: {{opento_commision}}
+
+
+
