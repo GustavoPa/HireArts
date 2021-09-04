@@ -32,11 +32,12 @@
     </section>
   </each> --}}
 
- {{#each artists as |artist|}}
+ 
   <section id="your-artists">
       <div class="flex-row">
         <h2 class="section-title2 primary-border ">Meet The Artists</h2>
       </div>
+      {{#each artists as |artist|}}
 <div class="artist" class="flex-row">
 <img src="{{artist.profile_pic}}"/> </br>
 
@@ -62,7 +63,7 @@
 </div>
 </div>
 </div>
-</div>
+
 
 {{/each}} 
 

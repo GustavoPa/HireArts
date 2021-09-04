@@ -22,12 +22,12 @@
       </h1>
       <nav>
       
-        <li><a href="#signup">SignUp</a></li>
+        <li><a href="#signup">SignUp &nbsp;</a></li>
         
         {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
         
         <li>
-            <a href="#login">Login</a>
+            <a href="#login">Login&nbsp;&nbsp;</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
@@ -48,9 +48,9 @@
         </p>
       </div>
 
-      <div id="login" class="artist-form">
+      <div id="login" class="login-form">
         <h3>Login</h3>
-        <p>Join our collective of Artist</p>
+
         <form>
           <label for="name">Enter User Name:</label>
           <input
@@ -61,7 +61,7 @@
             class="form-input"
           />
 
-          <label for="password">Enter password:</label>
+          <label for="password">Enter Password:</label>
           <input
             type="password"
             placeholder="Password"
@@ -85,6 +85,7 @@
         </p>
       </div>
 </br>
+   <div>
       <form id="searchArtsit" class="artistbtn">
         <input
           id="searchArtist"
@@ -92,17 +93,21 @@
           type="text"
           placeholder="SearchByArtist"
           name="Artist"
-        />
+        /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button id="search" type="submit" class="btnSearch">
           Search <i class="fa fa-search"></i>
         </button>
       </form>
       </br>  </br>  </br>
+      </div>
+      
       {{{ body }}}
+      
+      </div>
+      <h1 class="section-title primary-border">Sign Up</h1>
         <section id="signup" class="signup">
       <div class="flex-row">
-        <h2 class="section-title secondary-border">Sign Up</h2>
-      </div>
+        
 
       <div class="artist-form">
         <h3>Sign Up Today</h3>
@@ -203,8 +208,8 @@
               <label for="artist-no">No</label>
             </span>
           </p>
-
-          <button type="submit" >Start your Journey Now</button>
+          </br>
+          <button type="submit" class="sumbit" >Start your Journey Now</button>
         </form>
       </div>
     </section>

@@ -4,7 +4,6 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
  const path = require("path");
 
-
 // instantiate the server
 const app = express();
 const fs = require('fs');
