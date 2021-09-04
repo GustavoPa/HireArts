@@ -15,9 +15,6 @@ Artwork.init(
         artwork_id: {
             type: DataTypes.STRING, // need to confirm this is the correct datatype
             allowNull: false
-        },
-        artwork_count: {
-            type: DataTypes.INTEGER
         }
     },
     {

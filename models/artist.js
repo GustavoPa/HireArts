@@ -43,7 +43,7 @@ Artist.init(
             allowNull: true,
         },
         description: {
-            type: DataTypes.VARCHAR(300),
+            type: DataTypes.STRING,
             allowNull: true,
         },
         artwork_id: {
