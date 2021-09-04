@@ -2,13 +2,17 @@
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+ const path = require("path");
+
+
+// instantiate the server
+const app = express();
 
 const fs = require('fs');
 const path = require('path');
 
 
-// instantiate the server
-const app = express();
+
 
 // MIDDLEWARE for server to read POSTed data
 // parse incoming string or array data
@@ -16,17 +20,23 @@ app.use(express.urlencoded({ extended: true }));
 //parse incoming JSON data
 app.use(express.json());
 
+
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
     res.render('home');
 });
 
-const { artists } = require('./db/artist-seeds.json');
+// const { artists } = require('./db/artist-seeds.json');
 
 // 
 const PORT = process.env.PORT || 3001;
+
 
 
 
@@ -122,12 +132,12 @@ app.post('/api/artists', (req, res) => {
     }
 });
 
-
-
-
+const routes = require("./controllers");
+app.use("/", routes);
 
 
 // tell server to listen for requests
-app.listen(3001, () => {
-    console.log(`API server now on port ${PORT}!`);
+app.listen(PORT, () => {
+    console.log(`API server now on port http://localhost:${PORT}!`);
   });
+

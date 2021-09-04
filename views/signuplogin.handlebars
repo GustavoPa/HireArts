@@ -1,10 +1,12 @@
+
+{{#each artists as |artist|}}
 <form class="login-form">
   <div>
-    <label for="email-login">email:</label>
+    <label for="email-login">Email:{{artist.email}}</label>
     <input type="text" id="email-login" />
   </div>
   <div>
-    <label for="password-login">password:</label>
+    <label for="password-login">Password:&nbsp;{{artist.password}}</label>
     <input type="password" id="password-login" />
   </div>
   <div>
@@ -14,35 +16,38 @@
 
 <form class="signup-form">
   <div>
-    <label for="username-signup">username:</label>
+    <label for="username-signup">Username: &nbsp; {{artist.username}}</label>
     <input type="text" id="username-signup" />
   </div>
 <div>
-    <label for="password-signup">password:</label>
+    <label for="password-signup">Password:&nbsp; {{artist.password}}</label>
     <input type="password" id="password-signup" />
   </div>
   <div>
-    <label for="email-signup">email:</label>
+    <label for="email-signup">Email: &nbsp; {{artist.email}}</label>
     <input type="text" id="email-signup" />
   </div>
   <div>
-    <label for"location-signup">location:</label>
+    <label for"location-signup">Location: &nbsp; {{artist.location_ID}}</label>
     <input type="text" id="location-signup" />
   </div>
   <div>
-    <lable for"website-signup">website:</label>
+    <lable for"website-signup">Website:&nbsp; {{artist.website}}</label>
     <input type="text" id="website-signup" />
   </div>
+
 <div> 
-  <label for"upload-profile-pic">Upload Profile pic: </label>
+  <label for"upload-profile-pic">Upload Profile Pic: &nbsp; {{artist.profile_pic}} </label>
   <input type="file" id="upload-profile-pic" />
 </div>
+{{#each artist.work_samples as |work_sample|}}
 <div> 
-  <label for"upload-your-work">Upload Your Work: </label>
+  <label for"upload-your-work">Upload Your Work:&nbsp;{{work_sample}} </label>
   <input type="file" id="upload-your-work" />
 </div>
+{{/each}}
 <div>
-  <label for"artist-type:">Artist Type: </label>
+  <label for"artist-type:">Artist Type:&nbsp;{{artist_type}} </label>
   <input type="text" id="artist-type" />
 </div>
 
@@ -50,5 +55,7 @@
     <button type="submit">Start your Journey Now</button>
   </div>
 </form>
+
+{{/each}}
 
 <script src="/javascript/login.js"></script>
