@@ -35,6 +35,15 @@
       "password": "waleed123",
       "artisttype": "Painter",
       "commissions": "Yes"
+    },
+    {
+      "name": "Vincent Van Gogh",
+      "username": "VinnyVG",
+      "email": "vvg@gmail.com",
+      "password": "vincent",
+      "artisttype": "Painter",
+      "commissions": "No",
+      "id": "4"
     }
   ]
 }
