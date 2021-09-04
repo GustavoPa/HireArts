@@ -7,12 +7,7 @@ const exphbs = require('express-handlebars');
 
 // instantiate the server
 const app = express();
-
 const fs = require('fs');
-const path = require('path');
-
-
-
 
 // MIDDLEWARE for server to read POSTed data
 // parse incoming string or array data
