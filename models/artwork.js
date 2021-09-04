@@ -13,11 +13,12 @@ Artwork.init(
             allowNull: false
         },
         artwork_id: {
-            type: DataTypes.STRING, // what datatype being returned from azure ?
+            type: DataTypes.STRING, // need to confirm this is the correct datatype
             allowNull: false
         },
-        
-
+        artwork_count: {
+            type: DataTypes.INTEGER
+        }
     },
     {
         sequelize,

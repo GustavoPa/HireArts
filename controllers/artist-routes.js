@@ -4,9 +4,12 @@ const { Artist } = require('../../models/artist');
 // find all artists (GET api/artists)
 router.get('/', (req, res) => {
     // access the Artist model and run findAll() method
-    Artist.findAll()
+    Artist.findAll({
+        attributes: { exclude: ['password'] }
+    })
     .then(dbArtistData => res.json(dbArtistData))
     .catch(err => {
+        console.log(err)
         res.status(500).json(err);
     });
 });

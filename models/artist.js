@@ -33,8 +33,17 @@ Artist.init(
               len: [4]
             }
         },
+        location_id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: false,
+            allowNull: true,
+        },
         website: {
             type: DataTypes.STRING,
+            allowNull: true,
+        },
+        description: {
+            type: DataTypes.VARCHAR(300),
             allowNull: true,
         },
         artwork_id: {
@@ -45,11 +54,7 @@ Artist.init(
             type: DataTypes.STRING,
             allowNull: true
         },
-        location_id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: false,
-            allowNull: true,
-        } 
+
     },
     {
         // TABLE CONFIGURATIONS
