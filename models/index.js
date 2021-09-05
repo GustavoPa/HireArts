@@ -11,4 +11,6 @@ Artist.hasMany(Artwork, {
 
 
 
+
+
 module.exports = { Artist };
