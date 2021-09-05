@@ -407,7 +407,7 @@ a {
   
   
 img.samples {
-  height: 280px;
+  height: 150px;
   border-radius: 50%;
   display: flex;
   justify-content: space-between;
@@ -415,7 +415,7 @@ img.samples {
 }
   .artist img {
   padding-top: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 50%;
     text-align: center;
     display: block;
@@ -426,8 +426,8 @@ img.samples {
   }
   
   .artist-bio {
-    padding: 25px;
-    line-height: 1.3;
+    padding: 20px;
+    line-height: 1;
     color: rgb(253, 253, 253);
     
    
@@ -436,6 +436,7 @@ img.samples {
   .artist-bio h3 {
     font-size: 28px;
     color: rgb(255, 255, 255);
+    font-style: italic;
   }
   
   .artist p {

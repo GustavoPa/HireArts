@@ -8,6 +8,7 @@ const exphbs = require('express-handlebars');
 const app = express();
 const fs = require('fs');
 
+
 // MIDDLEWARE for server to read POSTed data
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
@@ -134,4 +135,3 @@ app.use("/", routes);
 app.listen(PORT, () => {
     console.log(`API server now on port http://localhost:${PORT}!`);
   });
-
