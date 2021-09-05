@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <title>HIRE ART</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <title>HIRE ART</title>
 
-  </head>
+</head>
 
 <body>
   <div class="wrapper">
@@ -21,206 +20,144 @@
         <a href="/">HIRE ART</a>
       </h1>
       <nav>
-      
+
         <li><a href="#signup">SignUp</a></li>
-        
+
         {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-        
+
         <li>
-            <a href="#login">Login</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-     
+          <a href="#login" id="form-login">Login</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
       </nav>
     </header>
     <main>
-         <section class="hero">
-      <div class="hero-cta">
-        <h2>Join Fellow Artist</h2>
-        <h2>Sign up Now!</h2>
-        <p>
-          Join us today and start building your connections. !loreum ipsum dolor
-          sit amet, consectetur adipiscing elit.!loreum ipsum dolor sit amet,
-          consectetur adipiscing elit. !loreum ipsum dolor sit amet, consectetur
-          adipiscing elit.
-        </p>
-      </div>
-
-      <div id="login" class="artist-form">
-        <h3>Login</h3>
-        <p>Join our collective of Artist</p>
-        <form>
-          <label for="name">Enter User Name:</label>
-          <input
-            type="text"
-            placeholder="User Name"
-            id="name"
-            name="name"
-            class="form-input"
-          />
-
-          <label for="password">Enter password:</label>
-          <input
-            type="password"
-            placeholder="Password"
-            id="password"
-            name="password"
-            class="form-input"
-          />
-
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    </section>
-     <section id="intro" class="intro">
-      <div class="flex-row">
-        <h2 class="section-title primary-border">What We Are About</h2>
-      </div>
-      <div class="flex-row">
-        <p>
-          We have Created a space where Artist of any kind Looking to Make
-          Connections and find collaborators.
-        </p>
-      </div>
-</br>
-      <form id="searchArtsit" class="artistbtn">
-        <input
-          id="searchArtist"
-          class="px-1 pr-5"
-          type="text"
-          placeholder="SearchByArtist"
-          name="Artist"
-        />
-        <button id="search" type="submit" class="btnSearch">
-          Search <i class="fa fa-search"></i>
-        </button>
-      </form>
-      </br>  </br>  </br>
-      {{{ body }}}
-        <section id="signup" class="signup">
-      <div class="flex-row">
-        <h2 class="section-title secondary-border">Sign Up</h2>
-      </div>
-
-      <div class="artist-form">
-        <h3>Sign Up Today</h3>
-        <p>Join our collective of Artist</p>
-
-        <form>
-          
-          <label for="name" i class="fa fa-user icon"></i> &nbsp;&nbsp;&nbsp;Enter User Name:</label>
-    
-          <input
-            type="text"
-            placeholder="User Name"
-            id="name"
-            name="name"
-            class="form-input"
-          />
-
-          <label for="password" i class="fa fa-key icon"></i>&nbsp;&nbsp;&nbsp;Enter password:</label>
-          <input
-            type="password"
-            placeholder="Password"
-            id="password"
-            name="password"
-            class="form-input"
-          />
-
-          <label for="email" i class="fa fa-envelope icon"></i>&nbsp;&nbsp;&nbsp; Enter email address:</label>
-          <input
-            type="email"
-            placeholder="Email Address"
-            id="email"
-            name="email"
-            class="form-input"
-          />
-
-          <label for="email" i class="fa fa-globe-americas"></i>&nbsp;&nbsp;&nbsp;Enter Location:</label>
-          <input
-            type="text"
-            placeholder="Location"
-            id="location"
-            name="location"
-            class="form-input"
-          />
-          <label for="About Me"i class="far fa-id-card"></i>&nbsp;&nbsp;&nbsp;Describe Yourself:</label>
-          <input
-            type="text"
-            placeholder="About Description"
-            id="about description"
-            name="about description"
-            class="form-input"
-          />
-
-          <label for="website" i class="fas fa-desktop"></i>&nbsp;&nbsp;&nbsp;Enter Website:</label>
-          <input
-            type="text"
-            placeholder="Website"
-            id="website"
-            name="website"
-            class="form-input"
-          />
-
-          <label for="upload profile pic" i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;Upload Profile Pic:</label>
-          <input
-            type="file"
-            placeholder="Upload Profile Pic"
-            id="upload profile pic"
-            name="upload profile pic"
-            class="form-input"
-          />
-          <label for="upload Samples" i class="far fa-images"></i>&nbsp;&nbsp;&nbsp;Upload Your Work:</label>
-          <input
-            type="file"
-            placeholder="Upload your work "
-            id="upload profile pic"
-            name="upload profile pic"
-            class="form-input"
-          />
-
-          <label for="Artist Type" i class="fa fa-paint-brush"></i>&nbsp;&nbsp;&nbsp;What kind of Artist Are You ?</label>
-          <select id="artist-type" name="artist-type">
-            <option value="Painter">Painter</option>
-            <option value="Photographer">Photographer</option>
-            <option value="Sculpter">Sculpter</option>
-            <option value="Graffiti">Graffiti</option>
-            <option value="Muralist">Muralist</option>
-            <option value="Illustrator">Illustrator</option>
-            <option value="Animator">Animator</option>
-          </select>
-
-           <p>
-            Are you open to Collaborating with other Artist?
-            <span class="radio-wrapper">
-              <input type="radio" name="artist-confirm" id="artist-yes" />
-              <label for="artist-yes">Yes</label>
-            </span>
-            <span class="radio-wrapper">
-              <input type="radio" name="artist-confirm" id="artist-no" />
-              <label for="artist-no">No</label>
-            </span>
+      <section class="hero">
+        <div class="hero-cta">
+          <h2>Join Fellow Artist</h2>
+          <h2>Sign up Now!</h2>
+          <p>
+            Join us today and start building your connections. !loreum ipsum dolor
+            sit amet, consectetur adipiscing elit.!loreum ipsum dolor sit amet,
+            consectetur adipiscing elit. !loreum ipsum dolor sit amet, consectetur
+            adipiscing elit.
           </p>
+        </div>
 
-          <button type="submit" >Start your Journey Now</button>
+        <div id="login" class="artist-form">
+          <h3>Login</h3>
+          <p>Join our collective of Artist</p>
+          <form>
+            <label for="name">Enter User Name:</label>
+            <input type="text" placeholder="User Name" id="name" name="name" class="form-input" />
+
+            <label for="password">Enter password:</label>
+            <input type="password" placeholder="Password" id="password" name="password" class="form-input" />
+
+            <button type="submit" id="login-btn">Login</button>
+          </form>
+        </div>
+      </section>
+      <section id="intro" class="intro">
+        <div class="flex-row">
+          <h2 class="section-title primary-border">What We Are About</h2>
+        </div>
+        <div class="flex-row">
+          <p>
+            We have Created a space where Artist of any kind Looking to Make
+            Connections and find collaborators.
+          </p>
+        </div>
+        </br>
+        <form id="searchArtsit" class="artistbtn">
+          <input id="searchArtist" class="px-1 pr-5" type="text" placeholder="SearchByArtist" name="Artist" />
+          <button id="search" type="submit" class="btnSearch">
+            Search <i class="fa fa-search"></i>
+          </button>
         </form>
-      </div>
-    </section>
-    
+        </br> </br> </br>
+        {{{ body }}}
+        <section id="signup" class="signup">
+          <div class="flex-row">
+            <h2 class="section-title secondary-border">Sign Up</h2>
+          </div>
 
-      
+          <div class="artist-form">
+            <h3>Sign Up Today</h3>
+            <p>Join our collective of Artist</p>
+
+            <form id="signup-form">
+
+              <label for="name" i class="fa fa-user icon"></i> &nbsp;&nbsp;&nbsp;Enter User Name:</label>
+
+              <input type="text" placeholder="User Name" id="name" name="name" class="form-input" />
+
+              <label for="password" i class="fa fa-key icon"></i>&nbsp;&nbsp;&nbsp;Enter password:</label>
+              <input type="password" placeholder="Password" id="password" name="password" class="form-input" />
+
+              <label for="email" i class="fa fa-envelope icon"></i>&nbsp;&nbsp;&nbsp; Enter email address:</label>
+              <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
+
+              <label for="location" i class="fa fa-globe-americas"></i>&nbsp;&nbsp;&nbsp;Enter Location:</label>
+              <input type="text" placeholder="Location" id="location" name="location" class="form-input" />
+              <label for="About Me" i class="far fa-id-card"></i>&nbsp;&nbsp;&nbsp;Describe Yourself:</label>
+              <input type="text" placeholder="About Description" id="about-description" name="about-description"
+                class="form-input" />
+
+              <label for="website" i class="fas fa-desktop"></i>&nbsp;&nbsp;&nbsp;Enter Website:</label>
+              <input type="text" placeholder="Website" id="website" name="website" class="form-input" />
+
+              <label for="profile-pic" i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;Upload Profile Pic:</label>
+              <input type="file" placeholder="Upload Profile Pic" id="profile-pic" name="profile-pic"
+                class="form-input" />
+              <label for="upload Samples" i class="far fa-images"></i>&nbsp;&nbsp;&nbsp;Upload Your Work:</label>
+              <input type="file" placeholder="Upload your work " id="work-pic" name="work-pic" class="form-input" />
+
+              <label for="Artist Type" i class="fa fa-paint-brush"></i>&nbsp;&nbsp;&nbsp;What kind of Artist Are You
+                ?</label>
+              <select id="artist-type" name="artist-type">
+                <option value="Painter">Painter</option>
+                <option value="Photographer">Photographer</option>
+                <option value="Sculpter">Sculpter</option>
+                <option value="Graffiti">Graffiti</option>
+                <option value="Muralist">Muralist</option>
+                <option value="Illustrator">Illustrator</option>
+                <option value="Animator">Animator</option>
+              </select>
+
+              <p>
+                Are you open to Collaborating with other Artist?
+                <span class="radio-wrapper">
+                  <input type="radio" name="artist-confirm" id="artist-yes" />
+                  <label for="artist-yes">Yes</label>
+                </span>
+                <span class="radio-wrapper">
+                  <input type="radio" name="artist-confirm" id="artist-no" />
+                  <label for="artist-no">No</label>
+                </span>
+              </p>
+
+              <button type="submit" id="sgnBtn">Start your Journey Now</button>
+            </form>
+          </div>
+        </section>
+
+
+
     </main>
-    
-   <footer>
+
+    <footer>
       <h2>&copy; HIRE ART</h2>
     </footer>
-  
-  
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
+
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+
 </body>
 
 </html>
