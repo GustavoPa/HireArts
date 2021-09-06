@@ -4,14 +4,9 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
  const path = require("path");
 
-
 // instantiate the server
 const app = express();
-
 const fs = require('fs');
-const path = require('path');
-
-
 
 
 // MIDDLEWARE for server to read POSTed data
@@ -140,4 +135,3 @@ app.use("/", routes);
 app.listen(PORT, () => {
     console.log(`API server now on port http://localhost:${PORT}!`);
   });
-
