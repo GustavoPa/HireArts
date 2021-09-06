@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Artist } = require('../models/artist');
+const { Artist } = require('../../models/artist');
 
 // find all artists (GET api/artists)
 router.get('/', (req, res) => {
@@ -46,7 +46,7 @@ router.post('/', (req, res) => {
         profilepic_id: req.body.profilepic_id,
         location_id: req.body.location_id
     })
-    then(dbArtistData => res.status(200).json(dbArtistData))
+    .then(dbArtistData => res.status(200).json(dbArtistData))
     .catch(err => {
         console.log(err);
         res.status(500).json(err);

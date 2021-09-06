@@ -5,7 +5,7 @@
 
 const router = require('express').Router();
 
-const artistRoutes = require('../artist-routes');
+const artistRoutes = require('./artist-routes');
 
 router.use('/artists', artistRoutes);
 

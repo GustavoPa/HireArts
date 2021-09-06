@@ -9,11 +9,11 @@ Artwork.init(
     {
         artist_id: {
             type: DataTypes.INTEGER,
-            primaryKey: true,
-            allowNull: false
+            allowNull: false,
+            foreignKey: true
         },
         artwork_id: {
-            type: DataTypes.STRING, // need to confirm this is the correct datatype
+            type: DataTypes.STRING, 
             allowNull: false
         }
     },
@@ -25,3 +25,5 @@ Artwork.init(
     }
 
 )
+
+module.exports = Artwork;
