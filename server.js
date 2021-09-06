@@ -22,14 +22,19 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(controllers);
 
+
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
     res.render('home');
 });
 
-const { artists } = require('./db/artist-seeds.json');
+// const { artists } = require('./db/artist-seeds.json');
 
 
 

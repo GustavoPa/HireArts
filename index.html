@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
- <head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>HIRE ART</title>
-
   </head>
-
-<body>
-  <div class="wrapper">
+  <body>
+    <!-- navigation tags - block level element -->
     <header>
       <h1>
-        <a href="/">HIRE ART</a>
+        <a href="index.html">HIRE ART</a>
       </h1>
       <nav>
-      
-        <li><a href="#signup">SignUp</a></li>
-        
-        {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-        
-        <li>
+        <ul>
+          <li>
+            <a href="#signup">SignUp</a>
+          </li>
+          <li>
             <a href="#login">Login</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
           </li>
-     
+        </ul>
       </nav>
     </header>
-    <main>
-         <section class="hero">
+    
+
+    <!-- hero/jumbotron -->
+    <section class="hero">
       <div class="hero-cta">
         <h2>Join Fellow Artist</h2>
         <h2>Sign up Now!</h2>
@@ -74,7 +71,10 @@
         </form>
       </div>
     </section>
-     <section id="intro" class="intro">
+    
+
+    <!-- "what we do" start - <section> -->
+    <section id="intro" class="intro">
       <div class="flex-row">
         <h2 class="section-title primary-border">What We Are About</h2>
       </div>
@@ -84,7 +84,7 @@
           Connections and find collaborators.
         </p>
       </div>
-</br>
+
       <form id="searchArtsit" class="artistbtn">
         <input
           id="searchArtist"
@@ -97,9 +97,50 @@
           Search <i class="fa fa-search"></i>
         </button>
       </form>
-      </br>  </br>  </br>
-      {{{ body }}}
-        <section id="signup" class="signup">
+      <!-- <form id="searchViewer" class="viewerBtn">
+      <input id="searchArtist" class="px-1 pr-5" type="text" placeholder="Viewer" name="Viewer">
+      <button id="search" type="submit" class=" btnSearch"> 
+  </form>
+  <form id="searchBtn" class="searchBtn">
+    <input id="searchArtist" class="px-1 pr-5" type="text" placeholder="Search" name="Search">
+    <button id="search" type="submit" class=" btnSearch"> <i class="fa fa-search"></i></button>
+</form> -->
+    </section>
+    <!-- end "what we do" -->
+
+    <!-- "meet the Artist" -->
+    <section id="your-artists">
+      <div class="flex-row">
+        <h2 class="section-title2 primary-border ">Meet The Artists</h2>
+      </div>
+
+      <div class="artists">
+        {{#each artists as |artist|}}
+        <article class="artist">
+          <img
+            src="{{artist.profile_pic}}"
+            alt="Harry Smith wearing a headband and lifting comically small pink weights"
+          />
+          <div class="artist-bio">
+            <h3 class="artist-name">{{artist.username}}</h3>
+            <h4 class="artist-role">{{artist.artist_type}}</h4>
+            <a href="mailto:{{artist.email}}">Email:&nbsp; {{artist.email}}</h4>
+            <a href="{{artist.website}}">Website:&nbsp; {{artist.website}} </a>
+            <h4 class="artist-role">Open to commision: &nbsp;{{artist.opento_commision}}</h4>
+            <p>
+              {{artist.description}}
+            </p>
+            {{#each artist.work_samples as |work_sample|}}
+            <img src="{{work_sample}}"/>
+              {{/each}}
+          </div>
+        </article>
+      </div>
+    </section>
+  </each>
+  
+    <!-- "Sign up section -->
+    <section id="signup" class="signup">
       <div class="flex-row">
         <h2 class="section-title secondary-border">Sign Up</h2>
       </div>
@@ -109,9 +150,7 @@
         <p>Join our collective of Artist</p>
 
         <form>
-          
           <label for="name" i class="fa fa-user icon"></i> &nbsp;&nbsp;&nbsp;Enter User Name:</label>
-    
           <input
             type="text"
             placeholder="User Name"
@@ -192,7 +231,7 @@
             <option value="Animator">Animator</option>
           </select>
 
-           <p>
+          <p>
             Are you open to Collaborating with other Artist?
             <span class="radio-wrapper">
               <input type="radio" name="artist-confirm" id="artist-yes" />
@@ -208,19 +247,10 @@
         </form>
       </div>
     </section>
-    
 
-      
-    </main>
-    
-   <footer>
+    <!-- footer -->
+    <footer>
       <h2>&copy; HIRE ART</h2>
     </footer>
-  
-  
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
-
+  </body>
 </html>
