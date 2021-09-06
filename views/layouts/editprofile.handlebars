@@ -1,33 +1,36 @@
+  {{#each artists as |artist|}}
   <section id="signup" class="signup">
   <h2>Edit Your Profile</h2>
 
   <form class="edit-form">
  <div>
-    <label for="username-signup">Edit Username:</label>
+    <label for="username-signup">Edit Username:{{artist.username}}</label>
     <input type="text" id="username-signup" />
   </div>
   <div>
-    <label for="email-signup">Edit Email:</label>
+    <label for="email-signup">Edit Email:{{artist.email}</label>
     <input type="text" id="email-signup" />
   </div>
   <div>
-    <label for"location-signup">Edit Location:</label>
+    <label for"location-signup">Edit Location: {{artist.location_ID}}</label>
     <input type="text" id="location-signup" />
   </div>
   <div>
-    <lable for"website-signup">Edit Website:</label>
+    <lable for"website-signup">Edit Website:{{artist.website}}</label>
     <input type="text" id="website-signup" />
   </div>
 <div> 
-  <label for"upload-profile-pic">Edit Profile Pic:</label>
+  <label for"upload-profile-pic">Edit Profile Pic:{{artist.profile_pic}}</label>
   <input type="file" id="upload-profile-pic" />
 </div>
+{{#each artist.work_samples as |work_sample|}}
 <div> 
-  <label for"upload-your-work">Edit Your Work Samples:</label>
+  <label for"upload-your-work">Edit Your Work Samples:{{work_sample}}</label>
   <input type="file" id="upload-your-work" />
 </div>
+{{/each}}
 <div>
-  <label for"artist-type:">Edit Artist Type:</label>
+  <label for"artist-type:">Edit Artist Type: {{artist_type}}</label>
   <input type="text" id="artist-type" />
 </div>
 
@@ -40,5 +43,5 @@
   </div>
 </form>
 </section>
-
+{{/each}}
 <script src="/javascript/editprofile.js"></script>
