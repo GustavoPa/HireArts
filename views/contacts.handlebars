@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/images/faviconicon.png" sizes="16x16" type="image/png">
     
-   <link rel="stylesheet" href="./assets/css/style.css"><link rel="stylesheet" href="./assets/css/secondary.css">
+   <link rel="stylesheet" href="/public/stylesheets/secondary.css">
     <title>Contact Us</title>
   </head>
 
@@ -20,43 +20,45 @@
         <a href="/">HIRE ART</a>
       </h1>
       <nav>
-        <li><a href="#signup">SignUp</a></li>
-        
-      
-        
-        <li>
-            <a href="#login">Login</a>
-          </li>
-          <li>  
-            <button id="logout" class="btn-no-style">logout</button></li>
+        <li><a href="#signup">SignUp&nbsp;&nbsp;&nbsp;</a></li>
+        {{#if loggedIn}}
+        <li>  
+            <button id="logout" class="btn-no-style">logout&nbsp;</button></li>
             <li>
+              {{else}}
+        <li>
+            <a href="#login">Login&nbsp;&nbsp;</a>
+          </li>
+          {{/if}}
             <a href="contact.html">Contact</a>
           </li>
       
       </nav>
     </header>
     <main>
-      
+
       </script>
-    <div class="name"> Anthony Cardozo 
-      <img class="lakyn " src="./assets/images/334542_10152129912880181_175584631_o.jpg"></img>
-      <a target="_blank" href="https://www.linkedin.com/in/lakyn-felix-359a43211/ "> Linkedin </a>
+    
+      <div class="name">Anthony Cardozo
+  <img class="anthony pr-30px " src="/public/images/Anthony.jpg"></img>
+  <a target="_blank" href="https://www.linkedin.com/in/anthony-cardozo-26522313a/">Linkedin</a>
+  <a target="_blank" href="https://github.com/acardozoweb"> GitHub </a>
+  <a href="mailto:anthonyccardozo@gmail.com"> Email </a>
+</div>
+    <div class="name"> Lakyn Felix 
+      <img class="lakyn " src="/public/images/Anthony.jpg"></img>
+      <a target="_blank" href="https://www.linkedin.com/in/lakyn-felix-359a43211/">Linkedin</a>
       <a target="_blank" href="https://github.com/LakynFelix "> GitHub </a>
       <a href="mailto:lakynmphotography@hotmail.com"> Email </a>  
     </div>
 
-<div class="name">Lakyn Felix
-  <img class="anthony pr-30px " src="./assets/images/Anthony.jpg"></img>
-  <a target="_blank" href="https://www.linkedin.com/in/anthony-cardozo-26522313a/"> Linkedin </a>
-  <a target="_blank" href="https://github.com/acardozoweb"> GitHub </a>
-  <a href="mailto:anthonyccardozo@gmail.com"> Email </a>
-</div>
+
 
 <div class="name"> Waleed Toukan
-  <img class="waleed " src="./assets/images/waleed.jpg"></img>
-  <a target="_blank" href="https://www.linkedin.com/in/waleedtouqan/  "> Linkedin </a>
-  <a target="_blank" href="https://github.com/GustavoPa"> GitHub </a>
-  <a href="mailto:waleedtouqan@gmail.com"> Email </a>
+  <img class="waleed " src="/public/images/waleed.jpg"></img>
+  <a target="_blank" href="https://www.linkedin.com/in/waleedtouqan/"> Linkedin</a>
+  <a target="_blank" href="https://github.com/GustavoPa"> GitHub</a>
+  <a href="mailto:waleedtouqan@gmail.com"> Email</a>
 </div>
 
       </script>

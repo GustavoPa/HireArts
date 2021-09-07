@@ -1,3 +1,4 @@
+
 ////////////////////////////////////////////////
 ///////// CONTROLLERS / API / INDEX ////////////
 //////////// PACKAGING API ROUTES //////////////
@@ -12,4 +13,5 @@ router.use('/artists', artistRoutes);
 
 
 
-module.exports = router;
+
+module.exports = router; 

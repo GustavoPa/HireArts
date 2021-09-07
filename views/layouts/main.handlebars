@@ -22,17 +22,21 @@
       </h1>
       <nav>
       
-        <li><a href="#signup">SignUp</a></li>
-        
-        {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-        
+
+        <li><a href="#signup">SignUp &nbsp;</a></li>
+
+       {{#if loggedIn}} 
+         <button id="logout" class="btn-no-style">Logout&nbsp;&nbsp;</button>
+        {{else}}
+
         <li>
-            <a href="#login">Login</a>
+            <a href="#login">Login&nbsp;&nbsp;</a>
           </li>
+          {{/if}}
           <li>
-            <a href="contact.html">Contact</a>
+           <a href='/contacts'>Contact</a>
           </li>
-     
+
       </nav>
     </header>
     <main>
@@ -41,6 +45,7 @@
         <h2>Join Fellow Artist</h2>
         <h2>Sign up Now!</h2>
         <p>
+
           Join us today and start building your connections. !loreum ipsum dolor
           sit amet, consectetur adipiscing elit.!loreum ipsum dolor sit amet,
           consectetur adipiscing elit. !loreum ipsum dolor sit amet, consectetur
@@ -51,8 +56,9 @@
       <div id="login" class="artist-form">
         <h3>Login</h3>
         <p>Join our collective of Artist</p>
+
         <form>
-          <label for="name">Enter User Name:</label>
+          <label for="name">Enter UserName:</label>
           <input
             type="text"
             placeholder="User Name"
@@ -62,6 +68,7 @@
           />
 
           <label for="password">Enter password:</label>
+
           <input
             type="password"
             placeholder="Password"
@@ -80,11 +87,14 @@
       </div>
       <div class="flex-row">
         <p>
-          We have Created a space where Artist of any kind Looking to Make
+          We have Created a Creative Space where Artist can show off their work and look to make new
           Connections and find collaborators.
         </p>
       </div>
 </br>
+
+   <div>
+
       <form id="searchArtsit" class="artistbtn">
         <input
           id="searchArtist"
@@ -92,17 +102,43 @@
           type="text"
           placeholder="SearchByArtist"
           name="Artist"
+
         />
+
+        /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
         <button id="search" type="submit" class="btnSearch">
           Search <i class="fa fa-search"></i>
         </button>
       </form>
       </br>  </br>  </br>
+
+      </div>
+      </section>
+
+      
       {{{ body }}}
+
+
+      <section class="signups">
+      <h1 class="section-titles primary-border">Sign Up</h1>
+      
         <section id="signup" class="signup">
       <div class="flex-row">
-        <h2 class="section-title secondary-border">Sign Up</h2>
-      </div>
+        <div>
+         <div class="previews">
+
+<img class="previews " src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Girl-with-Balloon-Banksy-Waterloo-Bridge-London.jpg">
+</br></br></br>
+<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Dems&DollProfile.jpg">
+</br></br></br>
+<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/334542_10152129912880181_175584631_o.jpg">
+</br></br></br>
+<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg">
+</br></br></br>
+</div>
+
+        </div>
 
       <div class="artist-form">
         <h3>Sign Up Today</h3>
@@ -204,22 +240,27 @@
             </span>
           </p>
 
-          <button type="submit" >Start your Journey Now</button>
+          </br>
+          <button type="submit" class="sumbit" >Start your Journey Now</button>
         </form>
       </div>
-    </section>
-    
-
       
+<div class="videos">
+  <iframe width="470" height="320" src="https://www.youtube.com/embed/OsqUBZBhiOU" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+  <iframe width="470" height="320" src="https://www.youtube.com/embed/Xoe3Nn5vuBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</secion>
+    </section>
     </main>
-    
+  
    <footer>
       <h2>&copy; HIRE ART</h2>
     </footer>
   
   
   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
+  <script src="/controllers/html-routes.js"></script>
   {{/if}}
 </body>
 

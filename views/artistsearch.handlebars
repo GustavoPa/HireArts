@@ -1,42 +1,12 @@
-
-
 {{!-- artistcard--}}
 
-{{!-- <script id="artistcard-template" type="text/x-handlebars-template"> --}}
-    {{!-- <section id="your-artists">
-      <div class="flex-row">
-        <h2 class="section-title2 primary-border ">Meet The Artists</h2>
-      </div>
-
-      <div class="artists">
-        {{#each artists as |artist|}}
-        <article class="artist">
-          <img
-            src="{{artist.profile_pic}}"
-          />
-          <div class="artist-bio">
-            <h3 class="artist-name">{{artist.username}}</h3>
-            <h4 class="artist-role">{{artist.artist_type}}</h4>
-            <a href="mailto:{{artist.email}}">Email:&nbsp; {{artist.email}}</h4>
-            <a href="{{artist.website}}">Website:&nbsp; {{artist.website}} </a>
-            <h4 class="artist-role">Open to Commision: &nbsp;{{artist.opento_commision}}</h4>
-            <p>
-              {{artist.description}}
-            </p>
-            {{#each artist.work_samples as |work_sample|}}
-            <img src="{{work_sample}}"/>
-              {{/each}}
-          </div>
-        </article>
-      </div>
-    </section>
-  </each> --}}
-
- {{#each artists as |artist|}}
   <section id="your-artists">
       <div class="flex-row">
         <h2 class="section-title2 primary-border ">Meet The Artists</h2>
       </div>
+
+      {{#each artists as |artist|}}
+
 <div class="artist" class="flex-row">
 <img src="{{artist.profile_pic}}"/> </br>
 
@@ -48,7 +18,9 @@
 <a href="mailto:{{artist.email}}">Email:&nbsp;{{artist.email}}</a>
 </br>
 
-<a href="{{artist.website}}">Website: &nbsp;{{artist.website}}</a></br>
+
+<a href="{{artist.website}}">Website:&nbsp;{{artist.website}}</a></br>
+
 </br>
 <p>{{artist.description}}<p>
 </br>
@@ -60,11 +32,11 @@
 <img class="samples"src="{{work_sample}}"/>
 {{/each}}
 </div>
-</div>
-</div>
-</div>
 
+</div>
+</div>
 {{/each}} 
+
 
 
 
