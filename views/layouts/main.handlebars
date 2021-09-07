@@ -24,15 +24,17 @@
       
 
         <li><a href="#signup">SignUp &nbsp;</a></li>
-        
-        {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-        
+
+       {{#if loggedIn}} 
+         <button id="logout" class="btn-no-style">Logout&nbsp;&nbsp;</button>
+        {{else}}
 
         <li>
             <a href="#login">Login&nbsp;&nbsp;</a>
           </li>
+          {{/if}}
           <li>
-           <a href='contact.html'>Contact</a>
+           <a href='/contacts'>Contact</a>
           </li>
 
       </nav>
@@ -56,7 +58,7 @@
         <p>Join our collective of Artist</p>
 
         <form>
-          <label for="name">Enter User Name:</label>
+          <label for="name">Enter UserName:</label>
           <input
             type="text"
             placeholder="User Name"
@@ -85,7 +87,7 @@
       </div>
       <div class="flex-row">
         <p>
-          We have Created a space where Artist of any kind Looking to Make
+          We have Created a Creative Space where Artist can show off their work and look to make new
           Connections and find collaborators.
         </p>
       </div>
@@ -113,25 +115,27 @@
 
       </div>
       </section>
+
+      
       {{{ body }}}
-      </div><h1 class="section-title primary-border">Sign Up</h1>
+
+
+      <section class="signups">
+      <h1 class="section-titles primary-border">Sign Up</h1>
       
         <section id="signup" class="signup">
       <div class="flex-row">
         <div>
          <div class="previews">
 
-<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/1613854_1075050769176801_327242492751484765_n.jpg">
-</br>
+<img class="previews " src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Girl-with-Balloon-Banksy-Waterloo-Bridge-London.jpg">
+</br></br></br>
 <img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Dems&DollProfile.jpg">
-</br>
+</br></br></br>
 <img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/334542_10152129912880181_175584631_o.jpg">
-</br>
-<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/1377516_727583913923490_1020292023_n.jpg.">
-</br>
-<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Dems&DollProfile.jpg">
-</br>
-<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/334542_10152129912880181_175584631_o.jpg">
+</br></br></br>
+<img class="previews" src="https://hireartgroup2.blob.core.windows.net/art-blob-store/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg">
+</br></br></br>
 </div>
 
         </div>
@@ -243,27 +247,20 @@
       
 <div class="videos">
   <iframe width="470" height="320" src="https://www.youtube.com/embed/OsqUBZBhiOU" 
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</br>
-   </br>
-
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
   <iframe width="470" height="320" src="https://www.youtube.com/embed/Xoe3Nn5vuBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-
+</secion>
     </section>
-    
-
-      
     </main>
-    
+  
    <footer>
       <h2>&copy; HIRE ART</h2>
     </footer>
   
   
   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
+  <script src="/controllers/html-routes.js"></script>
   {{/if}}
 </body>
 

@@ -14,4 +14,4 @@ router.use('/artists', artistRoutes);
 
 
 
-module.exports = router;
+module.exports = router; 
