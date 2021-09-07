@@ -54,6 +54,10 @@ Artist.init(
             type: DataTypes.STRING,
             allowNull: true
         },
+        commissions: {
+            type: DataTypes.STRING,
+            allowNull: true
+        }
 
     },
     {
