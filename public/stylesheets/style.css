@@ -25,6 +25,7 @@ header {
   z-index: 9999;
 }
 
+
 header h1 {
   font-weight: bold;
   margin: 0;
@@ -407,7 +408,9 @@ section#your-artists {
   flex-wrap: wrap;
 }
 
+  
 img.samples {
+
   height: 150px;
   border-radius: 50%;
   display: flex;
@@ -533,7 +536,6 @@ iframe{
   display: flex;
   flex-wrap: wrap; 
   box-shadow: 0 0 50px rgb(0, 0, 0);
-
   }
 
 .signup-info p,
@@ -597,8 +599,15 @@ button.sumbmit {
   header nav ul li a {
     font-size: 20px;
   }
+
   header nav ul li a:hover {
     background: #fce138;
+
+  h2.section-title.secondary-border
+  {
+    color: #fff;
+  }
+  .signup h2 {
     color: #024e76;
     border-radius: 15px;
     text-shadow: none;
