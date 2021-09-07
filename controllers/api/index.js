@@ -1,7 +1,17 @@
-const router = require("express").Router()
 
-const artistsRoute = require("./artistdata-mock")
+////////////////////////////////////////////////
+///////// CONTROLLERS / API / INDEX ////////////
+//////////// PACKAGING API ROUTES //////////////
+////////////////////////////////////////////////
 
-router.use ("/mock", artistsRoute);
+const router = require('express').Router();
+
+const artistRoutes = require('./artist-routes');
+
+router.use('/artists', artistRoutes);
+
+
+
+
 
 module.exports = router;
