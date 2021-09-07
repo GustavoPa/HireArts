@@ -53,28 +53,9 @@ router.post('/', (req, res) => {
     });
 });
 
-// PUT /api/artists/1
-// router.put('/:id', (req, res) => {});
 
-// DELETE /api/artists/1
-router.delete('/:id', (req, res) => {
-    User.destroy({
-        where: {
-            id: req.params.id
-        }
-    })
-    .then(dbArtistData => {
-        if (!dbArtistData) {
-            res.status(404).json({ message: 'No artist found with this id.'});
-            return;
-        }
-        res.json(dbArtistData);
-    })
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
-});
+
+
 
 
 
