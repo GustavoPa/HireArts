@@ -23,14 +23,14 @@
       <nav>
       
         <li><a href="#signup">SignUp &nbsp;</a></li>
-        
-        {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-        
+       {{#if loggedIn}} 
+         <button id="logout" class="btn-no-style">Logout&nbsp;&nbsp;</button>
+        {{/if}}
         <li>
             <a href="#login">Login&nbsp;&nbsp;</a>
           </li>
           <li>
-           <a href='contact.html'>Contact</a>
+           <a href='/contacts'>Contact</a>
           </li>
       </nav>
     </header>
@@ -99,7 +99,12 @@
       </br>  </br>  </br>
       </div>
       </section>
+
+      
       {{{ body }}}
+
+
+      
       </div><h1 class="section-title primary-border">Sign Up</h1>
       
         <section id="signup" class="signup">
