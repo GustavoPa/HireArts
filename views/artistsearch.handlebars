@@ -32,11 +32,14 @@
     </section>
   </each> --}}
 
- {{#each artists as |artist|}}
+
   <section id="your-artists">
       <div class="flex-row">
         <h2 class="section-title2 primary-border ">Meet The Artists</h2>
       </div>
+
+      {{#each artists as |artist|}}
+
 <div class="artist" class="flex-row">
 <img src="{{artist.profile_pic}}"/> </br>
 
@@ -48,7 +51,9 @@
 <a href="mailto:{{artist.email}}">Email:&nbsp;{{artist.email}}</a>
 </br>
 
-<a href="{{artist.website}}">Website: &nbsp;{{artist.website}}</a></br>
+
+<a href="{{artist.website}}">Website:&nbsp;{{artist.website}}</a></br>
+
 </br>
 <p>{{artist.description}}<p>
 </br>
@@ -60,11 +65,18 @@
 <img class="samples"src="{{work_sample}}"/>
 {{/each}}
 </div>
-</div>
+
 </div>
 </div>
 
 {{/each}} 
+
+
+
+
+
+{{/each}} 
+
 
 
 

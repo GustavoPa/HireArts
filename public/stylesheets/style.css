@@ -1,4 +1,3 @@
-
   * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +5,6 @@
   }
   
   body {
-   
     font-family: Helvetica, Arial, sans-serif;
   }
   
@@ -36,7 +34,7 @@
 
   li {
     list-style: none;
-  
+
   }
   header a {
     text-decoration: none;
@@ -97,7 +95,40 @@
   section {
     padding: 60px;
   }
-  
+  /* Login Form Section */
+  .login-form {
+    display: block;
+      justify-content: center;
+    border: 3px solid #073955;
+    background-color: rgba(99, 35, 116, 0.8);
+    padding: 20px;
+    color: #000000;
+    width: 400px;
+    height: 280px;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+
+  }
+  .login-form button {
+    margin-right: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  } 
+  .login-form h3  {
+    color:white;
+    line-height: 32px;
+  }
+  .login-form  label {
+    color:white;
+    line-height: 32px;
+  }
+
   /* HERO STYLES START */
   .hero {
     background-color:#024d76b6;
@@ -134,8 +165,9 @@
     border: 3px solid #073955;
     background-color: rgba(99, 35, 116, 0.8);
     padding: 20px;
-    color: #000000;
-    width: 50%;
+    color: #ffffff;
+    width: 600px;
+    height: 860px;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     border-radius: 15px;
@@ -143,7 +175,7 @@
   
   .artist-form h3 {
     font-size: 24px;
-    color: #073955;
+    color: #ffffff;
     margin: 0;
   }
   .artist-form p {
@@ -151,7 +183,6 @@
     color: #ddd;
   }
  
-
   form#searchArtsit {
     padding-top: 10px;
     display: flex;
@@ -208,25 +239,31 @@
 
 button#search {
   outline: none;
-  color: #000000;
+  color: #f0ecec;
     font-weight: bold;
     background-color: #024e76;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 16px;
     border-radius: 10px;
     align-content: center;
 }
+button#search :hover button {
+  color: #39a6b2;
+}
+ p {
+   color: #fff;
+ }
 
   .artist-form button {
-    color: #000000;
+    margin-right: 5px;
+    color: #ffffff;
     font-weight: bold;
     background-color: #024e76;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 10px;
-
   } 
   .artist-form button:hover {
     background-color: darkcyan;
@@ -291,6 +328,7 @@ button#search {
     font-size: 48px;
     border-bottom: 5px solid;
     color: #024e76;
+    padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -304,6 +342,10 @@ button#search {
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+  }
+  h1.section-title.primary-border {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .primary-border  {
     border-color: rgba(99, 35, 116, 0.8);
@@ -344,6 +386,9 @@ button#search {
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .sample_works {
@@ -359,17 +404,28 @@ a {
   section#your-artists {
     padding-top: 120px;
     background: #024d76; 
+
+     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     
+
+
   }
   
   
 img.samples {
-  height: 280px;
+
+  height: 150px;
   border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
   .artist img {
   padding-top: 20px;
-    padding: 20px;
+    padding: 10px;
+
     border-radius: 50%;
     text-align: center;
     display: block;
@@ -380,18 +436,25 @@ img.samples {
   }
   
   .artist-bio {
+
     padding: 25px;
     line-height: 1.3;
     color: rgb(253, 253, 253);
     font-style: italic;
+
   }
   
   .artist-bio h3 {
     font-size: 28px;
     color: rgb(255, 255, 255);
-    
+
+    font-style: italic;
+
   }
   
+  .artist p {
+    color: rgb(255, 255, 255);
+  }
   .artist-bio h4 {
     font-weight: lighter;
     font-size: 22px;
@@ -401,9 +464,16 @@ img.samples {
   .artist-bio p {
     font-size: 17px;
   }
- 
+ .artist-form p {
+   color: #fff;
+   font-style: italic;
+ }
   
-  /* REACH OUT STYLES START */
+  /* Sign Up Section */
+  section#signup {
+    display: flex;
+    justify-content: center;
+  }
   .signup {
     background: #024d76b6;
   }
@@ -414,7 +484,10 @@ img.samples {
   .signup h2 {
     color: #024e76;
   }
-  
+  h2.sign-uph2 {
+    color: #fff;
+    border-bottom: rgba(99, 35, 116, 0.8); 
+  }
   .signup-info {
     display: flex;
     justify-content: space-between;
@@ -433,10 +506,31 @@ img.samples {
   .signup-info div {
     color: white;
   }
+
+  img.previews {
+    box-shadow: 0 0 50px darkcyan;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   
-  .signup-info h3 {
-    color: #fce138;
-    font-size: 32px;
+    text-align: center;
+  }
+  
+  .videos {
+    border: 2px solid #024e76;
+    background:rgba(99, 35, 116, 0.8);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    height: 800px;
+    width: 400px;
+    padding-left: 130px;
+    padding-top: 50px;
+    
+    
   }
   
   .signup-info p, .signup-info address {
@@ -459,7 +553,9 @@ img.samples {
     background-color: rgba(255,255,255, 0.75);
     outline: none;
   }
-  
+  button.sumbmit {
+   margin-top: 5px;
+  }
   /* UTILITIES */
   .text-left {
     text-align: left;
