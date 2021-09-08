@@ -33,10 +33,14 @@ Artist.init(
               len: [4]
             }
         },
-        location_id: {
+        location: {
             type: DataTypes.INTEGER,
             autoIncrement: false,
             allowNull: true,
+        },
+        artist_type: {
+            type: DataTypes.STRING,
+            allowNull: true
         },
         website: {
             type: DataTypes.STRING,
@@ -46,16 +50,16 @@ Artist.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
-        artwork_id: {
+        work_samples: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        profilepic_id: {
+        profile_pic: {
             type: DataTypes.STRING,
             allowNull: true
         },
-        commissions: {
-            type: DataTypes.STRING,
+        opento_commission: {
+            type: DataTypes.BOOLEAN,
             allowNull: true
         }
 

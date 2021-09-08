@@ -12,7 +12,7 @@ Profilepic.init(
             allowNull: false,
             foreignKey: true
         },
-        profilepic_id: {
+        profile_pic: {
             type: DataTypes.INTEGER,
             allowNull: false
         }

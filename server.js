@@ -10,6 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 
+
 // instantiate the server
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -41,18 +42,18 @@ app.get('/', function (req, res) {
 // const { artists } = require('./db/artist-seeds.json');
 
 
-const PORT = process.env.PORT || 3001;
+// const PORT = process.env.PORT || 3001;
 
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', exphbs());
+// app.set('view engine', 'handlebars');
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
+// app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function (req, res) {
-    res.render('home');
-});
+// app.get('/', function (req, res) {
+//     res.render('home');
+// });
 
 
 // const { artists } = require('./db/artist-seeds.json');

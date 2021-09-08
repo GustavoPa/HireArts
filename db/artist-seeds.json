@@ -6,9 +6,9 @@
       "username": "LakynMPhotography",
       "email": "lakynmphotography@hotmail.com",
       "password": "lakyn123",
-      "artisttype": "Photographer",
+      "artist_type": "Photographer",
       "description": "description",
-      "commissions": "Yes"
+      "opento_commission": "Yes"
     },
     {
       "id": "1",
@@ -16,9 +16,9 @@
       "username": "DEMS & DOLLS",
       "email": "dems@hotmail.com",
       "password": "dems123",
-      "artisttype": "Painter",
+      "artist_type": "Painter",
       "description": "description",
-      "commissions": "Yes"
+      "opento_commission": "Yes"
     },
     {
       "id": "2",
@@ -26,9 +26,9 @@
       "username": "Banksy",
       "email": "banksy@gmail.com",
       "password": "banksy123",
-      "artisttype": "Street artist",
+      "artist_type": "Street artist",
       "description": "description",
-      "commissions": "No"
+      "opento_commission": "No"
     },
     {
       "id": "3",
@@ -36,17 +36,17 @@
       "username": "Waleed",
       "email": "Waleed@gmail.com",
       "password": "waleed123",
-      "artisttype": "Painter",
+      "artist_type": "Painter",
       "description": "description",
-      "commissions": "Yes"
+      "opento_commission": "Yes"
     },
     {
       "name": "Vincent Van Gogh",
       "username": "VinnyVG",
       "email": "vvg@gmail.com",
       "password": "vincent",
-      "artisttype": "Painter",
-      "commissions": "No",
+      "artist_type": "Painter",
+      "opento_commission": "No",
       "description": "description",
       "id": "4"
     }

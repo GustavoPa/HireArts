@@ -14,7 +14,7 @@ CREATE DATABASE hireart_db;
 --    work
 --    artist_type VARCHAR(30),
 --    medium VARCHAR(30),
---    location_id VARCHAR(30),
+--    location VARCHAR(30),
 --    about_description TEXT VARCHAR(300),
 --    PRIMARY KEY (artist_id)
 --  );
@@ -25,7 +25,7 @@ CREATE DATABASE hireart_db;
 
 
 
---  CREATE TABLE ArtistType(
+--  CREATE TABLE artist_type(
 --  Painter VARCHAR(30),
 --  Sculptor VARCHAR(30),
 --  Photographer VARCHAR(30),
@@ -37,6 +37,6 @@ CREATE DATABASE hireart_db;
 
 
 --  CREATE TABLE Location(
---   location_id VARCHAR(30),
+--   location VARCHAR(30),
 -- );
 

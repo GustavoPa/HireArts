@@ -12,7 +12,7 @@ Artwork.init(
             allowNull: false,
             foreignKey: true
         },
-        artwork_id: {
+        work_samples: {
             type: DataTypes.STRING, 
             allowNull: false
         }
