@@ -41,10 +41,13 @@ router.post('/', (req, res) => {
         username: req.body.username,
         email: req.body.email,
         password: req.body.password,
+        location: req.body.location,
+        artist_type: req.body.artist_type,
         website: req.body.website,
-        artwork_id: req.body.artwork_id,
-        profilepic_id: req.body.profilepic_id,
-        location_id: req.body.location_id
+        description: req.body.description,
+        work_samples: req.body.work_samples,
+        profile_pic: req.body.profile_pic,
+        opento_commission: req.body.opento_commission   
     })
     .then(dbArtistData => res.status(200).json(dbArtistData))
     .catch(err => {
