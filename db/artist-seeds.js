@@ -1,5 +1,6 @@
 const sequelize = require('../config/connection');
 
+
 const artistData = [
   {
     profile_pic: 'https://i.imgur.com/QQQQQQQ.jpg',
