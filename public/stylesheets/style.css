@@ -605,9 +605,17 @@ button.sumbmit {
 
   header nav ul li a:hover {
     background: #fce138;
+<<<<<<< HEAD
   }
 
   
+=======
+
+  h2.section-title.secondary-border
+  {
+    color: #fff;
+  }
+>>>>>>> 1e37bf59576296e165dae9d106d069040f88fffc
   .signup h2 {
     color: #024e76;
     border-radius: 15px;
