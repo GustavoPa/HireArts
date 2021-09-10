@@ -99,4 +99,4 @@ Artist.init(
     }
 );
 
-module.exports = Artist;
+module.exports = {Artist};

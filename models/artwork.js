@@ -7,6 +7,12 @@ class Artwork extends Model {}
 // create fields/columns
 Artwork.init(
     {
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
         artist_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

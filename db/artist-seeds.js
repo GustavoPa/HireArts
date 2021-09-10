@@ -1,4 +1,6 @@
 const sequelize = require('../config/connection');
+const { Artist, Artwork, Profilepic } = require('../models');
+
 
 
 const artistData = [
