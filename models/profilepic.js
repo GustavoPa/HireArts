@@ -7,6 +7,12 @@ class Profilepic extends Model {}
 // create associations
 Profilepic.init(
     {
+        id:  {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
         artist_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
