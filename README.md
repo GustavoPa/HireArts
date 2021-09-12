@@ -7,7 +7,7 @@ Platform for artists to showcase their work and meet one another
 5. [Credit](#Credit)
 6. [License](#License)
 7. [Heroku](#Heroku)
-8. [Github Repo](#Github Repo)
+8. [GithubRepo](#GithubRepo)
 9. [Contributors](#Contributors)
 
 
@@ -72,7 +72,7 @@ THEN i can view the artists who are registered on the site, what they do, where 
 ## License
 
 ## Heroku :
-## Github Repo :
+## GithubRepo :
 
 ## Contributors   
  * Anthony Cordazo     
