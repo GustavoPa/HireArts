@@ -9,6 +9,7 @@ body {
 }
 
 /* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: rgba(98, 35, 116, 0.671);
@@ -94,7 +95,9 @@ footer a {
 section {
   padding: 60px;
 }
+
 /* Login Form Section */
+
 div#login {
   width: 400px;
   height: 300px;
@@ -130,7 +133,8 @@ div#login {
   line-height: 32px;
 }
 
-/* HERO STYLES START */
+/* Artist Search Section */
+
 .hero {
   background-color: #024d76b6;
   background-size: cover;
@@ -605,17 +609,9 @@ button.sumbmit {
 
   header nav ul li a:hover {
     background: #fce138;
-<<<<<<< HEAD
   }
 
   
-=======
-
-  h2.section-title.secondary-border
-  {
-    color: #fff;
-  }
->>>>>>> 1e37bf59576296e165dae9d106d069040f88fffc
   .signup h2 {
     color: #024e76;
     border-radius: 15px;
@@ -727,8 +723,8 @@ button.sumbmit {
         cursor: pointer;
       }
       section.signups {
-        width: 100% ;
+        width: 100%;
       }
     }
   }
-
+}
