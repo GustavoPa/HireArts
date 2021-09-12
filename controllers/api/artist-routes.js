@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../../models');
-const { Artist } = require('../../models/artist');
+const { Artwork, Profilepic } = require('../../models');
+var Artist = require('../../models/artist');
 
 // find all artists (GET api/artists)
 router.get('/', (req, res) => {
@@ -21,7 +21,17 @@ router.get('/:id', (req, res) => {
         attributes: { exclude: [ 'password' ]},
         where: {
             id: req.params.id
-        }
+        },
+        include: [
+            {
+                model: Profilepic,
+                attributes: ['artist_id', '']
+            },
+            {
+                model: Artwork,
+                attributes: ['artist_id', 'work_samples']
+            }
+        ]
     })
     .then(dbArtistData => {
         if (!dbArtistData) {
