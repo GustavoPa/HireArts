@@ -9,6 +9,7 @@ body {
 }
 
 /* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: rgba(98, 35, 116, 0.671);
@@ -94,7 +95,13 @@ footer a {
 section {
   padding: 60px;
 }
+
 /* Login Form Section */
+
+div#login {
+  width: 400px;
+  height: 300px;
+}
 .login-form {
   display: block;
   justify-content: center;
@@ -102,8 +109,7 @@ section {
   background-color: rgba(99, 35, 116, 0.8);
   padding: 20px;
   color: #000000;
-  width: 400px;
-  height: 300px;
+  
   margin: 3.5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   border-radius: 15px;
@@ -127,7 +133,8 @@ section {
   line-height: 32px;
 }
 
-/* HERO STYLES START */
+/* Artist Search Section */
+
 .hero {
   background-color: #024d76b6;
   background-size: cover;
@@ -165,7 +172,7 @@ section {
   padding: 20px;
   color: #ffffff;
   width: 770px;
-  height: 1000px;
+  height: 900px;
   margin: 3.5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   border-radius: 15px;
@@ -404,7 +411,7 @@ section#your-artists {
   padding-top: 120px;
   background: #024d76;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   flex-wrap: wrap;
 }
 
@@ -460,7 +467,7 @@ img.samples {
 
 /* Sign Up Section */
 section.signups {
-  background: #024d76b6;
+  background-color: #024d7655;
   box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 h1.section-titles.primary-border {
@@ -602,11 +609,9 @@ button.sumbmit {
 
   header nav ul li a:hover {
     background: #fce138;
-
-  h2.section-title.secondary-border
-  {
-    color: #fff;
   }
+
+  
   .signup h2 {
     color: #024e76;
     border-radius: 15px;
@@ -718,7 +723,7 @@ button.sumbmit {
         cursor: pointer;
       }
       section.signups {
-        width: 100% ;
+        width: 100%;
       }
     }
   }
