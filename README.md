@@ -1,15 +1,6 @@
 # HireArts
 Platform for artists to showcase their work and meet one another
 
-## Table of Contents
-1. [User Story](#UserStory)
-4. [Process](#Process)
-5. [Credit](#Credit)
-6. [License](#License)
-7. [Heroku](#Heroku)
-8. [GithubRepo](#GithubRepo)
-9. [Contributors](#Contributors)
-
 
 ## User Story
 Concept: social networking / promotional platform for visual artists to show their work, connect with each other and with prospective clients/customers
