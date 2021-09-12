@@ -7,7 +7,7 @@ Platform for artists to showcase their work and meet one another
 5. [Credit](#Credit)
 6. [License](#License)
 7. [Heroku](#Heroku)
-8. [Githubrepo](#Githubrepo)
+8. [Github Repo](#Github Repo)
 9. [Contributors](#Contributors)
 
 
