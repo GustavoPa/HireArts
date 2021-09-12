@@ -685,9 +685,7 @@ button.sumbmit {
       .videos {
         width: 90%;
       }
-      html {
-        width: 100%;
-      }
+      
     }
 
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -713,9 +711,7 @@ button.sumbmit {
       .videos {
         width: 50%;
       }
- html {
-   width: 50%;
- }
+
       .search-container button {
         float: right;
         padding: 6px;
@@ -727,7 +723,7 @@ button.sumbmit {
         cursor: pointer;
       }
       section.signups {
-        width: 100%;
+        width: 80%;
       }
     }
   }
