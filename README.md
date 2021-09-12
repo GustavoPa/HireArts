@@ -3,13 +3,12 @@ Platform for artists to showcase their work and meet one another
 
 ## Table of Contents
 1. [User Story](#UserStory)
-2. [Acceptance Criteria](#AcceptanceCriteria)
-3. [Installation](#Installation)
 4. [Process](#Process)
 5. [Credit](#Credit)
 6. [License](#License)
 7. [Heroku](#Heroku)
-8. [Contributors](#Contributors)
+8. [Githubrepo](#Githubrepo)
+9. [Contributors](#Contributors)
 
 
 ## User Story
