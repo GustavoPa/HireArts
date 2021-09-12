@@ -1,7 +1,5 @@
 {
-
   "name": "hireart",
-
   "version": "1.0.0",
   "description": "Platform for artists to showcase their work and meet one another",
   "main": "server.js",
@@ -27,7 +25,8 @@
     "express-session": "^1.17.2",
     "express-session-sequelize": "^2.3.0",
     "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "sequelize-router": "^1.0.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

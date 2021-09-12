@@ -1,8 +1,14 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const bcrypt = require('bcrypt');
 
 // create the Artist model
-class Artist extends Model {}
+class Artist extends Model {
+    //instance method to check password per artist
+    checkPassword(loginPw) {
+        return bcrypt.compareSync(loginPw, this.password);
+    }
+}
 
 // define table columns and configuration
 Artist.init(
@@ -33,10 +39,14 @@ Artist.init(
               len: [4]
             }
         },
-        location_id: {
+        location: {
             type: DataTypes.INTEGER,
             autoIncrement: false,
             allowNull: true,
+        },
+        artist_type: {
+            type: DataTypes.STRING,
+            allowNull: true
         },
         website: {
             type: DataTypes.STRING,
@@ -46,17 +56,34 @@ Artist.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
-        artwork_id: {
+        work_samples: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        profilepic_id: {
+        profile_pic: {
             type: DataTypes.STRING,
             allowNull: true
         },
+        opento_commission: {
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        }
 
     },
     {
+        hooks: {
+            // lifecycle hook to hash PW before creating new artist
+            async beforeCreate(artistData) {
+               newArtistData.password = await bcrypt.hash(newArtistData.password, 10);
+               return newArtistData;
+            },
+            // lifecycle hook to hash new PW before updating PW
+            async beforeUpdate(updatedArtistData) {
+                updatedArtistData.password = await bcrypt.hash(updatedArtistData.password, 10);
+                return updatedArtistData;
+            }
+        },
+
         // TABLE CONFIGURATIONS
 
         // pass in imported sequelize connection (direct connection to the database)
