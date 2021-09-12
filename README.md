@@ -62,12 +62,15 @@ THEN i can view the artists who are registered on the site, what they do, where 
  
 ## License
 
-## Heroku :
-## GithubRepo :
+## Heroku : https://hireart.herokuapp.com/
+## GithubRepo : https://github.com/GustavoPa/HireArts
 
 ## Contributors   
  * Anthony Cordazo     
  * Waleed Touqan      
- * laykyn Felix    
+ * Lakyn Felix
  
+ ## Photos:
  
+![image](https://user-images.githubusercontent.com/84104126/133005260-46ba23cf-9e12-4871-904e-e9b2c73f4331.png)
+![image](https://user-images.githubusercontent.com/84104126/133005358-7a7a213c-cc24-40a9-ae86-078922530da9.png)
