@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Artwork, Profilepic } = require('../../models');
-var {Artist} = require('../../models/artist');
+var Artist = require('../../models/artist');
 
 // find all artists (GET api/artists)
 router.get('/', (req, res) => {
